@@ -6,7 +6,26 @@
 }
 
 .Fetch-home li {
-  width: 16rem;
-  height: 15rem;
+  width: 20rem;
+  height: 12rem;
   list-style: none;
+  padding: 1rem;
+  border: 1px solid #d0d0d082;
+}
+
+.Fetch-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  position: relative;
+  bottom: -14px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #fff;
+}
+
+.align {
+  text-align: end;
 }

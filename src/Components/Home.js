@@ -16,9 +16,13 @@ const Home = () => {
             <li id={data.volumn} key={data.volumn}>
                 <h2>{data.symbol}</h2>
                 <h3>{data.companyName}</h3>
+                <div className="Fetch-footer">
                 <div>
-                    <h5>{data.price}</h5>
-                    <p>{data.industry}</p>
+                    <p><span className='bold'>Price:</span> {data.price}</p>
+                </div>
+                <div className="align">
+                    <p> <span className='bold'>Industry:</span> {data.industry}</p>
+                </div>
                 </div>
             </li>
         ))}
