@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { stockdata } from '../redux/Stock-data/stock';
+import { NavLink } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -24,6 +25,9 @@ const Home = () => {
                     <p> <span className='bold'>Industry:</span> {data.industry}</p>
                 </div>
                 </div>
+                <NavLink to='/IncomeStatement' >
+                   <button type="button">Income Statement</button>
+                </NavLink>
             </li>
         ))}
         </ul>
