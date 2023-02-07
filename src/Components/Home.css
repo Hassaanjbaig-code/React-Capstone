@@ -1,0 +1,12 @@
+.Fetch-home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Fetch-home li {
+  width: 16rem;
+  height: 15rem;
+  list-style: none;
+}
