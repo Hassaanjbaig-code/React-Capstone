@@ -13,6 +13,10 @@
   border: 1px solid #d0d0d082;
 }
 
+.Fetch-home li:nth-child(even) {
+  background-color: #d15b9d;
+}
+
 .Fetch-footer {
   display: flex;
   width: 90%;
@@ -28,4 +32,14 @@
 
 .align {
   text-align: end;
+}
+
+.Button {
+  border: none;
+  background: transparent;
+  position: relative;
+  left: 19rem;
+  bottom: 10rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }

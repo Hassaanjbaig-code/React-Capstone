@@ -11,7 +11,7 @@ const IncomeStatement = () => {
           count = count +1;
         return (
             <div key={count} className="Company-Income">
-            <h2>{state.symbol}</h2>
+            <h2>{state.symbol} Income Statement</h2>
             <div className="Company-all-Cost">
                 <h4><span>Cost of Revenue</span>  {state.costOfRevenue}</h4>
                 <h4> <span>Cost and Expenses</span> {state.costAndExpenses}</h4>

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { stockdata } from '../redux/Stock-data/stock';
 import { NavLink } from 'react-router-dom';
 import { IC } from '../redux/Stock-data/IncomeStatement';
+import { FaAngleRight } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     let count = 0;
   return (
     <div>
+        <h1>US Companies Stock Price</h1>
         <ul className='Fetch-home'>
         {show.data.map((data) => { 
             count = count + 1;
@@ -30,7 +32,7 @@ const Home = () => {
                 </div>
                 </div>
                 <NavLink to='/IncomeStatement' >
-                   <button type="button" onClick={() => dispatch(IC(data.symbol))}>Income Statement</button>
+                   <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><FaAngleRight /></button> 
                 </NavLink>
             </li>
         )})}
