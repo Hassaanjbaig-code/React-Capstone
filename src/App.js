@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
 import IncomeStatement from './Components/IncomeStatement';
 import Header from './Components/Header';
 
@@ -9,8 +9,8 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path='/' element= {<Home />} />
-        <Route path='/IncomeStatement' element= {<IncomeStatement />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/IncomeStatement" element={<IncomeStatement />} />
       </Routes>
     </div>
   );

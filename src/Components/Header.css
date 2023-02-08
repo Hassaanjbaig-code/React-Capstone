@@ -8,5 +8,9 @@
 
 .Icon {
   font-size: 3rem;
+}
+
+.head h3 a {
+  text-decoration: none;
   color: #69123c;
 }
