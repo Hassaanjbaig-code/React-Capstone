@@ -1,19 +1,16 @@
-import React, { useEffect } from 'react';
-import { IC } from '../redux/Stock-data/IncomeStatement';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import './IncomeStatement.css';
 
 const IncomeStatement = () => {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(IC());
-    }, [dispatch])
-
+  let count = 0;
     const show = useSelector(data => data.IncomeStatement)
   return (
     <div>
-        {show.data.map((state) => (
-            <div className="Company-Income">
+        {show.data.map((state) => {
+          count = count +1;
+        return (
+            <div key={count} className="Company-Income">
             <h2>{state.symbol}</h2>
             <div className="Company-all-Cost">
                 <h4><span>Cost of Revenue</span>  {state.costOfRevenue}</h4>
@@ -23,7 +20,7 @@ const IncomeStatement = () => {
                 <h4><span>Revenue</span> {state.revenue}</h4>
             </div>
             </div>
-        ))}
+        )})}
     </div>
   )
 }
