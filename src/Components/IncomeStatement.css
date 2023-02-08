@@ -1,0 +1,23 @@
+.Company-Income {
+  width: 90%;
+  padding: 1rem;
+}
+
+.Company-Income h2 {
+  text-align: center;
+}
+
+.Company-all-Cost {
+  line-height: 49px;
+}
+
+.Company-all-Cost h4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Company-all-Cost h4 span {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}

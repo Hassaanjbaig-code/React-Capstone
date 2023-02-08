@@ -1,0 +1,16 @@
+.head {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Icon {
+  font-size: 3rem;
+}
+
+.head h3 a {
+  text-decoration: none;
+  color: #69123c;
+}
