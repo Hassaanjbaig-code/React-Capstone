@@ -6,6 +6,7 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Stock Management project ](#-Stock-Management-)
   - [🛠 Built With ](#-built-with-)
+    - [Live Preview ](#live-preview)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -23,6 +24,10 @@
 **Stock Management project** is a sole react-redux project that use Financial Modeling Prep API to display a list of stock and Income statement. Stock show the proce and which industry it belong. Users can access the personal list the profile section.
 
 ## 🛠 Built With <a name="built-with"></a>
+
+### live-Preview 
+
+- [Live Preview](https://www.loom.com/share/9d5a04661e7a4c6599f13c236c2dabe4/)
 
 ### Tech Stack <a name="tech-stack"></a>
 <details>
