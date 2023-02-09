@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Comming soon](/)
+- [Live link](https://stirring-toffee-3398b0.netlify.app/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -77,8 +77,6 @@ To run the project, execute the following command:
 ```
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 **Dicko Allasane**
 
 👤 **Hassaan Baig**
 
