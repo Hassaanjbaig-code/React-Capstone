@@ -22,7 +22,7 @@ const Home = () => {
           count += 1;
           return (
             <li id={data.volumn} key={count}>
-              <NavLink to="/IncomeStatement">
+              <NavLink to={`/details/:${data.symbol}/:${count}`}>
                 <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><FaAngleRight /></button>
               </NavLink>
               <h2>{data.symbol}</h2>
