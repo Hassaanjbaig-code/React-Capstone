@@ -10,8 +10,8 @@ const Header = () => (
       <BsBoxArrowInLeft className="Icon" />
     </NavLink>
     <h3><a href="https://www.indmoney.com/us-stocks/top-tech-stocks">US Technology Company</a></h3>
-    <div>
-      <FiSettings />
+    <div className="H-Icone">
+      <FiSettings className="Setting" />
       <FiMic />
     </div>
   </div>
