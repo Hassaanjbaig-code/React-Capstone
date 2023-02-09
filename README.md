@@ -9,6 +9,7 @@
     - [Live Preview ](#live-preview)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [future features ](#future-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
@@ -45,6 +46,12 @@
 - **React Router**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### future features <a name="future features"></a>
+
+- **Adding for style**
+- **Adding animation**
+- **Balance sheet of the company**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
