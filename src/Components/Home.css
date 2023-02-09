@@ -15,6 +15,7 @@
   padding: 1rem;
   border: 1px solid #d0d0d082;
   width: 37%;
+  line-height: 1rem;
 }
 
 .Fetch-home li:nth-child(even) {
@@ -42,8 +43,8 @@
   border: none;
   background: transparent;
   position: relative;
-  left: 19rem;
-  bottom: 10rem;
+  left: 98px;
+  bottom: -46px;
   font-size: 1.4rem;
   cursor: pointer;
 }
