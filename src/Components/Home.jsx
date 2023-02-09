@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { FaAngleRight } from 'react-icons/fa';
 import { FiSearch } from 'react-icons/fi';
+import { BsBoxArrowInRight } from 'react-icons/bs';
 import { stockdata } from '../redux/Stock-data/stock';
 import { IC } from '../redux/Stock-data/IncomeStatement';
 import './Home.css';
@@ -41,7 +41,7 @@ const Home = () => {
               <div className="Main-data">
                 <h2>{data.symbol}</h2>
                 <NavLink to={`/details/:${data.symbol}/:${count}`}>
-                  <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><FaAngleRight /></button>
+                  <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><BsBoxArrowInRight /></button>
                 </NavLink>
               </div>
               <div className="Fetch-footer">

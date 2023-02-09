@@ -2,6 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './IncomeStatement.css';
 
+// const handlefilter = (query, data) => data.filter((data) => data.symbol === query);
+
 const IncomeStatement = () => {
   let count = 0;
   const show = useSelector((data) => data.IncomeStatement);
@@ -11,11 +13,7 @@ const IncomeStatement = () => {
         count += 1;
         return (
           <div key={count} className="Company-Income">
-            <h2>
-              {state.symbol}
-              {' '}
-              Income Statement
-            </h2>
+            <h2>{state.symbol}</h2>
             <div className="Company-all-Cost">
               <h4>
                 <span>Cost of Revenue</span>
