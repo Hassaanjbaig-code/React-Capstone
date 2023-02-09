@@ -18,10 +18,12 @@ const handlefilter = (query, data) => {
 
 const Home = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(stockdata());
-  }, [dispatch]);
   const show = useSelector((state) => state.stock);
+  useEffect(() => {
+    if (show.data.length === 0) {
+      dispatch(stockdata());
+    }
+  }, [dispatch, show.data.length]);
   const [filterdata, setFilterdata] = useState('');
   const filterItem = handlefilter(filterdata, show.data);
   let count = 0;
