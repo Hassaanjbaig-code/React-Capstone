@@ -7,11 +7,14 @@
 }
 
 .Fetch-home li {
-  width: 20rem;
-  height: 12rem;
+  max-height: 250px;
+  max-width: 300px;
+  min-height: 150px;
+  min-width: 120px;
   list-style: none;
   padding: 1rem;
   border: 1px solid #d0d0d082;
+  width: 37%;
 }
 
 .Fetch-home li:nth-child(even) {
@@ -44,3 +47,16 @@
   font-size: 1.4rem;
   cursor: pointer;
 }
+
+.align-item {
+  bottom: 18px;
+}
+
+.Fetch-footer p {
+  display: flex;
+  flex-direction: column;
+}
+
+/* @media screen and (min-width: 729px) { */
+  
+/* } */

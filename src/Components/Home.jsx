@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
@@ -24,21 +25,16 @@ const Home = () => {
               <h2>{data.symbol}</h2>
               <h3>{data.companyName}</h3>
               <div className="Fetch-footer">
-                <div>
-                  <p>
-                    <span className="bold">Price:</span>
-                    {' '}
-                    {data.price}
-                  </p>
-                </div>
-                <div className="align">
-                  <p>
-                    {' '}
-                    <span className="bold">Industry:</span>
-                    {' '}
-                    {data.industry}
-                  </p>
-                </div>
+                <p>
+                  <span className="bold">
+                    Price:
+                  </span>
+                  {data.price}
+                  <span className="bold">
+                    Industry:
+                  </span>
+                  {data.industry}
+                </p>
               </div>
               <NavLink to="/IncomeStatement">
                 <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><FaAngleRight /></button>
