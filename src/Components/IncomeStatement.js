@@ -20,28 +20,33 @@ const IncomeStatement = () => {
               <h4>
                 <span>Cost of Revenue</span>
                 {' '}
+                $
                 {state.costOfRevenue}
               </h4>
               <h4>
                 {' '}
                 <span>Cost and Expenses</span>
                 {' '}
+                $
                 {state.costAndExpenses}
               </h4>
               <h4>
                 <span>Gross Profit</span>
                 {' '}
+                $
                 {state.grossProfit}
               </h4>
               <h4>
                 {' '}
                 <span>Net Income</span>
                 {' '}
+                $
                 {state.netIncome}
               </h4>
               <h4>
                 <span>Revenue</span>
                 {' '}
+                $
                 {state.revenue}
               </h4>
             </div>

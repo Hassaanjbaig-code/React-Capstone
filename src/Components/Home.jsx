@@ -32,6 +32,7 @@ const Home = () => {
                   <span className="bold">
                     Price:
                   </span>
+                  $
                   {data.price}
                   <span className="bold">
                     Industry:
