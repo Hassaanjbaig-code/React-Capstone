@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should first 1`] = `
+<div>
+  <h1>
+    US Companies Stock Price
+  </h1>
+  <ul
+    className="Fetch-home"
+  />
+</div>
+`;
