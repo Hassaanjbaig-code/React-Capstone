@@ -1,6 +1,7 @@
 .Company-Income {
   width: 90%;
   padding: 1rem;
+  margin: 0;
 }
 
 .Company-Income h2 {
@@ -20,4 +21,9 @@
 .Company-all-Cost h4 span {
   font-size: 1.3rem;
   font-weight: bolder;
+}
+
+.Company-Income h4:nth-child(even) {
+  background-color: #d15b9d;
+  border-radius: 5px;
 }
