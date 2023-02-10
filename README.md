@@ -18,6 +18,7 @@
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 # 📖 Stock Management project <a name="about-project"></a>
@@ -106,6 +107,12 @@ Feel free to check the [issues page](https://github.com/Hassaanjbaig-code/React-
 ## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project! It's help a lot
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the great design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
