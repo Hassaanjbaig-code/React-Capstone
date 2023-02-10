@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './IncomeStatement.css';
+import { BsBoxArrowInRight } from 'react-icons/bs';
 
 const IncomeStatement = () => {
   let count = 0;
@@ -20,29 +21,49 @@ const IncomeStatement = () => {
               <h4>
                 <span>Cost of Revenue</span>
                 {' '}
-                {state.costOfRevenue}
+                <span className="Value">
+                  $
+                  { state.costOfRevenue }
+                  <BsBoxArrowInRight className="IC-icone" />
+                </span>
               </h4>
               <h4>
                 {' '}
                 <span>Cost and Expenses</span>
                 {' '}
-                {state.costAndExpenses}
+                <span className="Value">
+                  $
+                  {state.costAndExpenses}
+                  <BsBoxArrowInRight className="IC-icone" />
+                </span>
               </h4>
               <h4>
                 <span>Gross Profit</span>
                 {' '}
-                {state.grossProfit}
+                <span className="Value">
+                  $
+                  {state.grossProfit}
+                  <BsBoxArrowInRight className="IC-icone" />
+                </span>
               </h4>
               <h4>
                 {' '}
                 <span>Net Income</span>
                 {' '}
-                {state.netIncome}
+                <span className="Value">
+                  $
+                  {state.netIncome}
+                  <BsBoxArrowInRight className="IC-icone" />
+                </span>
               </h4>
               <h4>
                 <span>Revenue</span>
                 {' '}
-                {state.revenue}
+                <span className="Value">
+                  $
+                  {state.revenue}
+                  <BsBoxArrowInRight className="IC-icone" />
+                </span>
               </h4>
             </div>
           </div>

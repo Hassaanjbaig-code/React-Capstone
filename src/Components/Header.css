@@ -7,10 +7,14 @@
 }
 
 .Icon {
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 .head h3 a {
   text-decoration: none;
   color: #69123c;
+}
+
+.Setting {
+  margin-right: 12px;
 }
