@@ -1,3 +1,11 @@
+@keyframes fade {
+  0% { opacity: 0%; }
+  25% { opacity: 25%; }
+  50% { opacity: 50%; }
+  75% { opacity: 70%; }
+  100% { opacity: 100%; }
+}
+
 .Company-Income {
   width: 100%;
   margin: 0;
@@ -48,8 +56,10 @@
 .Stock-single-box {
   width: 45%;
   height: 12rem;
-  border: 1px solid #ababab;
+  border: 2px solid #ababab;
   padding: 1%;
+  animation-name: fade;
+  animation-duration: 3s;
 }
 
 .Stock-single-heading {
@@ -59,7 +69,7 @@
 .Stock-single-footor {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   justify-content: flex-end;
   line-height: 1px;
   position: relative;
