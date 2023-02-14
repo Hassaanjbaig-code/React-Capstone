@@ -6,6 +6,7 @@ import { FiSearch } from 'react-icons/fi';
 import { BsBoxArrowInRight } from 'react-icons/bs';
 import { stockdata } from '../redux/Stock-data/stock';
 import { IC } from '../redux/Stock-data/IncomeStatement';
+import { senddata } from '../redux/Stock-data/Storestock';
 import './Home.css';
 
 const handlefilter = (query, data) => {
@@ -25,7 +26,17 @@ const Home = () => {
     }
   }, [dispatch, show.data.length]);
   const [filterdata, setFilterdata] = useState('');
+
   const filterItem = handlefilter(filterdata, show.data);
+  const Singlestockdata = (symbol, companyName, price) => {
+    dispatch(IC(symbol));
+    const ouput = {
+      symbol,
+      companyName,
+      price,
+    };
+    dispatch(senddata(ouput));
+  };
   let count = 0;
   return (
     <div>
@@ -41,7 +52,13 @@ const Home = () => {
               <div className="Main-data">
                 <h2>{data.symbol}</h2>
                 <NavLink to={`/details/:${data.symbol}/:${count}`}>
-                  <button type="button" className="Button input-submit" onClick={() => dispatch(IC(data.symbol))}><BsBoxArrowInRight /></button>
+                  <button
+                    type="button"
+                    className="Button input-submit"
+                    onClick={() => Singlestockdata(data.symbol, data.companyName, data.price)}
+                  >
+                    <BsBoxArrowInRight />
+                  </button>
                 </NavLink>
               </div>
               <div className="Fetch-footer">

@@ -6,17 +6,27 @@ import { BsBoxArrowInRight } from 'react-icons/bs';
 const IncomeStatement = () => {
   let count = 0;
   const show = useSelector((data) => data.IncomeStatement);
+  const stockshow = useSelector((data) => data.boxStock.data);
   return (
     <div>
+      <div className="Stock-single-main-data">
+        <div className="Stock-single-box">
+          <div>
+            <h2 className="Stock-single-heading">{stockshow.symbol}</h2>
+          </div>
+          <div className="Stock-single-footor">
+            <h3 className="">{stockshow.companyName}</h3>
+            <p className="">
+              $
+              {stockshow.price}
+            </p>
+          </div>
+        </div>
+      </div>
       {show.data.map((state) => {
         count += 1;
         return (
           <div key={count} className="Company-Income">
-            <h2>
-              {state.symbol}
-              {' '}
-              Income Statement
-            </h2>
             <div className="Company-all-Cost">
               <h4>
                 <span>Cost of Revenue</span>
