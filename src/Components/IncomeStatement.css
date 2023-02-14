@@ -36,3 +36,44 @@
 .IC-icone {
   color: white;
 }
+
+.Stock-single-main-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Stock-single-box {
+  width: 45%;
+  height: 12rem;
+  border: 1px solid #ababab;
+  padding: 1%;
+}
+
+.Stock-single-heading {
+  color: #70701e;
+}
+
+.Stock-single-footor {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  line-height: 1px;
+  position: relative;
+  top: 61px;
+  color: #ffffffa5;
+}
+
+@media screen and (max-width: 425px) {
+  .Stock-single-box {
+    width: 76%;
+    height: 10rem;
+  }
+
+  .Stock-single-footor {
+    top: 29px;
+  }
+}
