@@ -69,8 +69,8 @@
 .Stock-single-footor {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: end;
+  align-items: flex-end;
+  justify-content: flex-end;
   line-height: 1px;
   position: relative;
   top: 61px;
